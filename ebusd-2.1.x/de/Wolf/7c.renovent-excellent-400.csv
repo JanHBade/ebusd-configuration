@@ -1,4 +1,4 @@
-# type (r[1-9];w;u),circuit,name,[comment],[QQ],ZZ,PBSB,[ID],field1,part (m/s),datatypes/templates,divider/values,unit,comment,field2,part (m/s),datatypes/templates ,divider/values,unit,comment,field3,part (m/s),datatypes/templates,divider/values,unit,comment,field4,part (m/s),datatypes/templates,divider/values,unit,comment,field5,part (m/s),datatypes/templates,divider/values,unit,comment
+# type (r[1-9];w;u),circuit,name,[comment],[QQ],ZZ,PBSB,[ID],field1,part (m/s),datatypes/templates,divider/values,unit,comment,field2,part (m/s),datatypes/templates ,divider/values,unit,comment,field3,part (m/s),datatypes/templates,divider/values,unit,comment,field4,part (m/s),datatypes/templates,divider/values,unit,comment,field5,part (m/s),datatypes/templates,divider/values,unit
 *r,kwl,,,,7c,4050,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 *w,kwl,,,,7c,4050,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 r,,LuftmengeStufe0,,,,4050,21,aktuell,,UIR,,m³/h,,minimum,,UIR,,m³/h,,maximum,,UIR,,m³/h,,Schrittgroesse,,UIR,,m³/h,,Werkseinstellung,,UIR,,m³/h
