@@ -1,18 +1,13 @@
 # type (r[1-9];w;u),circuit,name,[comment],[QQ],ZZ,PBSB,[ID],field1,part (m/s),datatypes/templates,divider/values,unit,comment,field2,part (m/s),datatypes/templates ,divider/values,unit,comment,field3,part (m/s),datatypes/templates,divider/values,unit,comment,field4,part (m/s),datatypes/templates,divider/values,unit,comment,field5,part (m/s),datatypes/templates,divider/values,unit,comment
-## BRINK RENOVENT EXCELLENT 300 & 400 (plus)
-##
-## This ebus config may work for Ubbink, VisionAIR, WOLF CWL series and some other systems that are identical
-## You may need to modify the 7c address in the next 2 lines for your brand/model. Or just uncomment the necessary lines.
 
-## Renovent Excellent 400 (plus) series
+
+
 *r,kwl,,,,7c,4050,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 *w,kwl,,,,7c,4050,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
-## Renovent Excellent 300 series
-## *r,kwl,,,,3c,4050,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-## *w,kwl,,,,3c,4050,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
-#### AKTUELLE KONFIGDATEN ####
+
+
 r,,LuftmengeStufe0,,,,4050,21,aktuell,,UIR,,m³/h,,minimum,,UIR,,m³/h,,maximum,,UIR,,m³/h,,Schrittgroesse,,UIR,,m³/h,,Werkseinstellung,,UIR,,m³/h
 r,,LuftmengeStufe1,,,,4050,01,aktuell,,UIR,,m³/h,,minimum,,UIR,,m³/h,,maximum,,UIR,,m³/h,,Schrittgroesse,,UIR,,m³/h,,Werkseinstellung,,UIR,,m³/h
 r,,LuftmengeStufe2,,,,4050,02,aktuell,,UIR,,m³/h,,minimum,,UIR,,m³/h,,maximum,,UIR,,m³/h,,Schrittgroesse,,UIR,,m³/h,,Werkseinstellung,,UIR,,m³/h
@@ -28,14 +23,14 @@ r,,RHSensorEmpfindlichkeit,,,,4050,33,aktuell,,SIR,,,,minimum,,SIR,,,,maximum,,S
 r,,BeleuchtungDisplay,,,,4050,1d,aktuell,,UIR,,%,,minimum,,UIR,,%,,maximum,,UIR,,%,,Schrittgroesse,,UIR,,%,,Werkseinstellung,,UIR,,%
 r,,VorheizRegister_inst,,,,4050,31,aktuell,,UIR,1=ja;0=nein
 
-#### FILTER UND LAUFZEITEN ####
+
 r,,TageMitFilter,,,,4050,22,,,UIR,,bei 90 Tagen kommt Filterwarnung 
 r,,LuftmengeMitFilter,,,,4050,23,,,UIR,,tm³ 
 r,,LuftmengeFilterSchwellwert,,,,4050,1c,,,UIR,,tm³ 
 r,,BetriebsstundenTotal,,,,4050,24,,,UIR,-5,h,,,,UIR,,,,,,UIR,,,,,,UIR,,,,,,UIR
 r,,LuftmengeTotal,,,,4050,25,,,UIR,-1000,m³,,,,UIR,,,,,,UIR,,,,,,UIR,,,,,,UIR
 
-#### KONFIGURATION AENDERN ####
+
 w,,LuftmengeStufe0,408001,,,4080,21,,,UIR,,m³/h
 w,,LuftmengeStufe1,408001,,,4080,01,,,UIR,,m³/h
 w,,LuftmengeStufe2,408001,,,4080,02,,,UIR,,m³/h
@@ -51,7 +46,7 @@ w,,DruckungleichgewichtZulaessig,408008,,,4080,08,,,UIR,0=nicht zulaessig;1=zula
 w,,FestesDruckungleichgewicht,408009,,,4080,09,,,SIR,,m³/h
 w,,Ventilatorbetrieb,,,,40a1,,,,ULR,0x0=Feuchteschutz;0x00010001=Reduziert;0x00020002=Normal;0x00030003=Intensiv,,,,,IGN:1
 
-#### SENSORDATEN ####
+
 r,,Feuchte,40220120,,,4022,20,,,UIR,10,% ,RelativeHumidity
 r,,FeuchtigkeitsSteigerung,40220121,,,4022,21,,,UIR,0=Error;1=Not Initialized;2=Sensor Not Active;3=PowerUp Delay;4=Normal RH;5=Boost Rising;6=Boost Stable;7=Boost Decending,,HumidityBoostState
 r,,SoftwareVersion,40220100,,,4022,00,,,STR:*,,,SoftwareVersion
@@ -74,7 +69,7 @@ r,,CO2Sensor3Value,4022012D,,,4022,2d,,,UIR,,,CO2Sensor3Value
 r,,CO2Sensor4Status,4022012E,,,4022,2e,,,UIR,,,CO2Sensor4Status
 r,,CO2Sensor4Value,4022012F,,,4022,2f,,,UIR,,,CO2Sensor4Value
 
-#### SONSTIGES ####
+
 r,,Errors,409000,,,4090,00,,s,UCH,,,,ign,,IGN:2,,,,code,,UCH,,,,code,,UCH,,,,code,,UCH,,,,code,,UCH,,,,code,,UCH,,,,code,,UCH,,,,code,,UCH,,,,code,,UCH,,,,code,,UCH,,,,code,,UCH
 #w,,reseterrors,409103FFFFFF,,,4091,7c0001,,m,HEX:3,,,,result,s,UIR,0=ResetNotRequested;1=ResetSuccessful;2=ResetRelayed;3=NoErrorsFound;4=ResetFailed;5=BlockingErrors;6=UnknownResult
 #w,,resetfilter,409103FFFFFF,,,4091,7c0100,,,,,,,result,s,UIR,0=ResetNotRequested;1=ResetSuccessful;2=ResetRelayed;3=FilterWarningWasNotSet;4=ResetFailed;5=UnknownResult
@@ -99,19 +94,5 @@ r,,EWTT-,40500119,,,4050,19,aktuell,,SIR,10,°C,,minimum,,SIR,10,°C,,maximum,,S
 r,,EWTT+,4050011A,,,4050,1A,aktuell,,SIR,10,°C,,minimum,,SIR,10,°C,,maximum,,SIR,10,°C,,Schrittgroesse,,SIR,10,°C,,Werkseinstellung,,SIR,10,°C
 r,,OptionTemperature,4022011A,,,4022,1a,,,UIR,,,OptionTemperature
 
-#### UNDEFINIERT ####
-#r,,undef_01,undef,,,,0a,,,HEX:10
-#r,,undef_02,undef,,,,0b,,,HEX:10
-#r,,undef_03,undef,,,,0c,,,HEX:10
-#r,,undef_04,undef,,,,0d,,,HEX:10
-#r,,undef_05,undef,,,,0e,,,HEX:10
-#r,,undef_06,undef,,,,0f,,,HEX:10
-#r,,undef_07,undef,,,,10,,,HEX:10
-#r,,undef_08,undef,,,,11,,,HEX:10
-#r,,undef_09,undef,,,,12,,,HEX:10
-#r,,undef_10,undef,,,,13,,,HEX:10
-#r,,undef_11,undef,,,,14,,,HEX:10
-#r,,undef_12,undef,,,,15,,,HEX:10
-#r,,undef_13,undef,,,,16,,,HEX:10
-#r,,undef_14,undef,,,,17,,,HEX:10
-#r,,undef_15,undef,,,,18,,,HEX:10
+
+
