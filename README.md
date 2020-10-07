@@ -11,6 +11,8 @@ provided here and you should definitely know what you're doing.
 
 **Otherwise: keep your hands off!!!**
 
+Merge it with: https://github.com/dstrigl/ebusd-config-brink-renovent-excellent-300
+
 
 Usage with ebusd version 3.2 or higher
 --------------------------------------
